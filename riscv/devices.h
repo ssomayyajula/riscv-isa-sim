@@ -90,4 +90,9 @@ class mmio_plugin_device_t : public abstract_device_t {
   void* user_data;
 };
 
+class mpu_device_t : public abstract_device_t {
+ public:
+  list<queue<reg_t>> chans;
+}
+
 #endif
